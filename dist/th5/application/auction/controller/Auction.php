@@ -4,8 +4,78 @@ namespace app\auction\controller;
 use think\Controller;
 use think\Db;
 use app\base\controller\ModuleBaseController;
+use think\Request;
+
 class Auction extends ModuleBaseController
 {
+
+    /**
+     * redis
+     * @var null
+     */
+    private $redis = null;
+
+
+    /**
+     * 构造函数
+     * Index constructor.
+     * @param Request|null $request
+     */
+    public function __construct(Request $request = null)
+    {
+        parent::__construct($request);
+        $this->redis = $this->getRedis();
+    }
+
+
+    /**
+     * 获取redis
+     * @return \Redis
+     */
+    private function getRedis()
+    {
+        $redis = new \Redis();
+        $redis->connect('127.0.0.1', 6379);
+        $redis->auth('123456');
+        return $redis;
+    }
+
+
+    /**
+     * 设置缓存到redis
+     * @param $token
+     */
+    private function setToken($token)
+    {
+        $this->redis->set($token, $res);
+    }
+
+    /**
+     * 删除旧缓存
+     * @param $oldToken
+     */
+    private function deleteOldToken($oldToken)
+    {
+        $this->redis->del($oldToken);
+    }
+
+    public function validateToken()
+    {
+        //Request::instance()->header();
+        $token = $this->header['access-token'];
+        $userData = $this->redis->get($token);
+        $this->refreshToken($token);
+        //1、判断redis key是否存在；2、判断用户数据是否存在
+        $exists = $this->redis->exists($token);
+        if (!$exists) {
+            return json_encode($this->actionFail());
+        }
+        if (empty($userData)) {
+            return json_encode($this->actionFail());
+        }
+        return json_encode($this->actionSuccess());
+    }
+
     public function queryCar()
     {
         $brandArr = Db::name('brand')->select();
@@ -199,5 +269,15 @@ class Auction extends ModuleBaseController
         }else{
             echo json_encode($this->actionFail());
         }
+    }
+    //  定时器循环
+    private function setTime($timeStamp){
+        $ecdTime = setInterval(function(){
+            $timeStamp--;
+            if($timeStamp<=0){
+                clearInterval(interval);
+
+            }
+        },1000)
     }
 }
