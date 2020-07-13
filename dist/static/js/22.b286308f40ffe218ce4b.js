@@ -1,0 +1,2 @@
+webpackJsonp([22],{"8Oax":function(e,t){},DDJn:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var s={render:function(){this.$createElement;this._self._c;return this._m(0)},staticRenderFns:[function(){var e=this.$createElement,t=this._self._c||e;return t("div",[t("div",{staticClass:"dv"},[this._v("\n    欢迎来到后台管理系统\n  ")]),this._v(" "),t("canvas")])}]};var i=n("VU/8")({name:"Welcome"},s,!1,function(e){n("8Oax")},null,null);t.default=i.exports}});
+//# sourceMappingURL=22.b286308f40ffe218ce4b.js.map

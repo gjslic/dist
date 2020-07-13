@@ -1,0 +1,2 @@
+webpackJsonp([41],{IcnI:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var u=n("7+uW"),s=n("NYxO");u.default.use(s.a),t.default=new s.a.Store({state:{UserToken:"",brandNum:0,priceNum:0},mutations:{setUserToken:function(e,t){e.UserToken=t}}})}});
+//# sourceMappingURL=41.b3535533e39d207084ef.js.map

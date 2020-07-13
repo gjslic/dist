@@ -1,0 +1,2 @@
+webpackJsonp([38],{"63PC":function(t,e){},sI1i:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var i={render:function(){var t=this.$createElement;return(this._self._c||t)("div",{staticClass:"nav_title"},[this._t("default",[this._v("购车服务")])],2)},staticRenderFns:[]};var s=n("VU/8")({name:"CarNavTitle"},i,!1,function(t){n("63PC")},null,null);e.default=s.exports}});
+//# sourceMappingURL=38.2bc332a2874a70ca6a5b.js.map

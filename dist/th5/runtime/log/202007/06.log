@@ -7109,3 +7109,151 @@
 [ sql ] [ SQL ] SELECT * FROM `peanut_series` ORDER BY `sales_volume` DESC LIMIT 5 [ RunTime:0.065547s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_price` [ RunTime:0.066269s ]
 [ sql ] [ SQL ] SELECT * FROM `peanut_price` [ RunTime:0.065602s ]
+---------------------------------------------------------------
+[ 2020-07-06T17:31:50+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
+[运行时间：0.652892s] [吞吐率：1.53req/s] [内存消耗：2,569.20kb] [文件加载：47]
+[ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'buyCar',
+    1 => 'Buycar',
+    2 => 'vehicle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://118.190.149.14/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://118.190.149.14',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buycar\controller\Buycar.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.091902s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.201389s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` WHERE  `vehicle_state` = '已上架' [ RunTime:0.062747s ]
+---------------------------------------------------------------
+[ 2020-07-06T17:31:51+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
+[运行时间：0.944128s] [吞吐率：1.06req/s] [内存消耗：2,509.48kb] [文件加载：47]
+[ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'buyCar',
+    1 => 'Buycar',
+    2 => 'queryCar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://118.190.149.14/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://118.190.149.14',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buycar\controller\Buycar.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105815s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_brand` [ RunTime:0.191699s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_brand` [ RunTime:0.069190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_series` [ RunTime:0.069893s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_series` ORDER BY `sales_volume` DESC LIMIT 5 [ RunTime:0.069219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_price` [ RunTime:0.069386s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_price` [ RunTime:0.071183s ]
+---------------------------------------------------------------
+[ 2020-07-06T17:33:18+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
+[运行时间：0.698826s] [吞吐率：1.43req/s] [内存消耗：2,509.88kb] [文件加载：47]
+[ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'buyCar',
+    1 => 'Buycar',
+    2 => 'queryCar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://118.190.149.14/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://118.190.149.14',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buycar\controller\Buycar.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.207861s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_brand` [ RunTime:0.074333s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_brand` [ RunTime:0.073472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_series` [ RunTime:0.077475s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_series` ORDER BY `sales_volume` DESC LIMIT 5 [ RunTime:0.076682s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_price` [ RunTime:0.075021s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_price` [ RunTime:0.073107s ]
+---------------------------------------------------------------
+[ 2020-07-06T17:33:18+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
+[运行时间：0.914247s] [吞吐率：1.09req/s] [内存消耗：2,569.59kb] [文件加载：47]
+[ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'buyCar',
+    1 => 'Buycar',
+    2 => 'vehicle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://118.190.149.14/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://118.190.149.14',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buycar\controller\Buycar.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.121067s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.308207s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` WHERE  `vehicle_state` = '已上架' [ RunTime:0.444850s ]
